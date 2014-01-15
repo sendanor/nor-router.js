@@ -2,7 +2,7 @@
   "name": "nor-router.js",
   "version": "1.8.0",
   "description": "Router.js NPM wrapper for easier use with browserify",
-  "main": "node_modules/router/dist/router.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +19,7 @@
     "url": "https://github.com/Sendanor/nor-router.js/issues"
   },
   "dependencies": {
-    "router.js": "tildeio/router.js"
+    "router": "tildeio/router.js"
   },
   "homepage": "https://github.com/Sendanor/nor-router.js"
 }
