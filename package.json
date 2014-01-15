@@ -2,8 +2,12 @@
   "name": "nor-router.js",
   "version": "1.8.0",
   "description": "Router.js NPM wrapper for easier use with browserify",
-  "main": "index.js",
+  "main": "node_modules/router/dist/commonjs/main.js",
   "scripts": {
+    "install": "npm run install-router && npm run install-rsvp && npm run install-route-recognizer",
+    "install-router": "cd node_modules/router && npm install -d && npm run prepublish",
+    "install-rsvp": "cd node_modules/rsvp && npm install -d && npm run prepublish",
+    "install-route-recognizer": "cd node_modules/route-recognizer && npm install -d && npm run prepublish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,7 +15,7 @@
     "url": "git://github.com/Sendanor/nor-router.js.git"
   },
   "keywords": [
-    "history"
+    "router", "router.js"
   ],
   "author": "Jaakko-Heikki Heusala <jheusala@iki.fi>",
   "license": "MIT",
@@ -19,7 +23,10 @@
     "url": "https://github.com/Sendanor/nor-router.js/issues"
   },
   "dependencies": {
-    "router": "tildeio/router.js"
+    "router": "tildeio/router.js",
+    "rsvp": "tildeio/rsvp.js",
+    "route-recognizer": "tildeio/route-recognizer",
+    "grunt-cli": "*"
   },
   "homepage": "https://github.com/Sendanor/nor-router.js"
 }
